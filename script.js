@@ -54,11 +54,11 @@ function calculate(firstOperand, secondOperand, operator){
     } else if (operator === '/'){
         return firstOperand / secondOperand;
     } else if (operator === 'sin'){
-        return Math.sin(secondOperand);
+        return Math.sin(secondOperand); //menghitung sin
     } else if (operator === 'cos'){
-        return Math.cos(secondOperand);
+        return Math.cos(secondOperand); //menghitung cos
     } else if (operator === 'tan'){
-        return Math.tan(secondOperand);
+        return Math.tan(secondOperand); //menghitung tan
     }
     return secondOperand;
 }
