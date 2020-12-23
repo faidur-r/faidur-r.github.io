@@ -53,6 +53,12 @@ function calculate(firstOperand, secondOperand, operator){
         return firstOperand * secondOperand;
     } else if (operator === '/'){
         return firstOperand / secondOperand;
+    } else if (operator === 'sin'){
+        return Math.sin(secondOperand);
+    } else if (operator === 'cos'){
+        return Math.cos(secondOperand);
+    } else if (operator === 'tan'){
+        return Math.tan(secondOperand);
     }
     return secondOperand;
 }
@@ -83,6 +89,9 @@ keys.addEventListener('click', event => {
         case '*':
         case '/':
         case '=':
+        case 'sin':
+        case 'cos':
+        case 'tan':
         handleOperator(value);
         break;
         case '.':
